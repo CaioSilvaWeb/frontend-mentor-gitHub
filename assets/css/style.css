@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #141c2f;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+div.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: red;
+   max-width: 1000px;
+   margin: 0 auto;
+   height: 100vh;
+}
+section.center, header{
+    text-align: center;
+}
+    

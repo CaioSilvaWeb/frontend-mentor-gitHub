@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub - FrontEnd Mentor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <span>devfinder</span>
+            <button>LIGHT
+                <i class="fa-solid fa-sun"></i>
+            </button>
+        </header>
+        <!-- barra de pesquisa -->
+        <section id="search" class="center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search github username...">
+            <button type="submit">Search</button>
+        </section>
+        <!-- Dados do usuario -->
+        <section id="user-info" class="center">
+            <div class="profile">
+                <div>
+                    <div>
+                        <img src="assets/image/github-logo.png" width="220px" alt="">
+                    </div>
+                    <h1 class="name">Username</h1>
+                    <p class="username">@username</p>
+                    <p class="text-profile">text profile username</p>
+                </div>
+                <p class="date">Date</p>
+            </div>
+            <!-- Dados do github do usuario -->
+            <div>
+                <div>
+                    <p>Repos</p>
+                    <span class="repos">0</span>
+                </div>
+                <div>
+                    <p>Folowers</p>
+                    <span class="folowers">0</span>
+                </div>
+                <div>
+                    <p>Following</p>
+                    <span class="folowers">0</span>
+                </div>
+            </div>
+            <!-- Contatos -->
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <p class="location">Location</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-link"></i>
+                        <p class="link">Link</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                        <p class="twitter">Twitter</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mountain-city"></i>
+                        <p class="job">Job</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a304ffd975.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
