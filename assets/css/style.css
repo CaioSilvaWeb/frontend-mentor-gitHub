@@ -113,6 +113,10 @@ div.github-database{
     padding: 20px 0;
     margin-top: 25px;
 }
+div.github-database span{
+    font-size: 25px;
+    font-weight: 700;
+}
 div.github-database p, span{
     margin: 0;
 }
@@ -126,6 +130,7 @@ div.contacts{
 div.contacts p{
     margin: 0;
 }
+ 
 div.contacts i{
     margin-right: 1rem;
 }
