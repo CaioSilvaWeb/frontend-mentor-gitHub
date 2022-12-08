@@ -4,12 +4,32 @@ body{
     background-color: #141c2f;
     box-sizing: border-box;
     color: aliceblue;
+    font-family: 'Space Mono', monoespaço;
+}
+
+header{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+header span{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+header button{
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
 div.container{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   background-color: red;
    max-width: 1000px;
    margin: 0 auto;
    height: 100vh;
@@ -17,4 +37,100 @@ div.container{
 section.center, header{
     text-align: center;
 }
-    
+/* header */
+section#search{
+    background-color: #1E2A47;
+    padding: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    margin-bottom: 40px;
+}
+section#search i{
+    color: #60abff;
+    font-size: 25px;
+}
+section#search button{
+    background-color: #0079ff;
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+section#search input{
+    background-color: #1E2A47;
+    border: none;
+    width: 60%;
+    color: #fff;
+    font-size: 20px;
+}
+section#search input::placeholder{
+  color: #fff;
+  font-family: 'Space Mono', monoespaço;
+}
+section#search input:focus{
+    outline: none;
+    font-family: 'Space Mono', monoespaço;
+}
+/* barra de pesquisa */
+section#user-info{
+    background-color: #1E2A47;
+    border-radius: 12px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    padding: 100px 0;
+}
+div.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div.img-username{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}   
+div.profile i{
+    font-size: 9rem;
+    margin-right: 2rem ;
+    color: #141c2f;
+}
+h1{
+   font-size: 30px; 
+   margin-top: 0;
+}
+p.username{
+    color: #0079ff;
+}
+div.github-database{
+    background-color: #141c2f;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 25px;
+}
+div.github-database p, span{
+    margin: 0;
+}
+/* Contatos */
+div.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 40px;
+}
+div.contacts p{
+    margin: 0;
+}
+div.contacts i{
+    margin-right: 1rem;
+}
+div.contacts-info{
+    display: flex;
+    align-items: center;
+    padding-bottom:10px;
+}
