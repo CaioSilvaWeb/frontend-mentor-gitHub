@@ -1,7 +1,6 @@
 const btnTheme = document.querySelector(".btn-theme");
 const searchBtn = document.querySelector(".search-btn");
 const inputSearch = document.querySelector(".input-search");
-
 const name = document.querySelector(".name");
 const username = document.querySelector(".username");
 const textProfile = document.querySelector(".text-profile");
@@ -13,26 +12,25 @@ const local = document.querySelector(".local");
 const link = document.querySelector(".link");
 const twitter = document.querySelector(".twitter");
 const job = document.querySelector(".job");
-const locationUser = document.querySelector("#location");
+const locationUser = document.querySelector("#location-user");
 const contact = document.querySelector("#contact-link");
 const contactTwitter = document.querySelector("#contact-twitter");
 const company = document.querySelector("#company");
+const img = document.querySelector(".img");
 
-let img = document.createElement("img");
-let imgMain = document.querySelector(".img-main");
+btnTheme.addEventListener('click', () =>{
+  
+})
 
-searchBtn.addEventListener("click", function () {
+searchBtn.addEventListener('click', function () {
   const url = `https://api.github.com/users/${inputSearch.value}`;
   async function getUrl() {
     const response = await fetch(url);
     const data = await response.json();
     const dateData = data.created_at.slice(0, data.created_at.length - 10);
     const dateBr = dateData.split("-").reverse().join(" ");
-    
-
-    console.log(data);
+    console.log(data );
     img.src = data.avatar_url;
-    imgMain.appendChild(img);
 
     name.innerHTML = data.name;
     username.innerHTML = `@${data.login}`;
@@ -54,11 +52,11 @@ searchBtn.addEventListener("click", function () {
       company.style.color = '#434242';
     }
     if(data.location == null){
-      location.innerHTML = 'Não atribuído';
+      local.innerHTML = 'Não atribuído';
       locationUser.style.color = '#434242';
     }
-    if(data.blog == null){
-      blog.innerHTML = 'Não atribuído';
+    if(data.blog == null || data.blog == "" ){
+      link.innerHTML = 'Não atribuído';
       contact.style.color = '#434242';
     }
     if(data.twitter_username == null){
