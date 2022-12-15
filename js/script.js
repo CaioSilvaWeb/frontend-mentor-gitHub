@@ -18,9 +18,11 @@ const contactTwitter = document.querySelector("#contact-twitter");
 const company = document.querySelector("#company");
 const img = document.querySelector(".img");
 
-btnTheme.addEventListener('click', () =>{
-  
-})
+document.addEventListener('keypress', function(e){
+  if(e.key === 'Enter'){
+    searchBtn.click()
+  }
+});
 
 searchBtn.addEventListener('click', function () {
   const url = `https://api.github.com/users/${inputSearch.value}`;

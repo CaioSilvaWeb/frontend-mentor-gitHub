@@ -7,10 +7,6 @@ body{
     font-family: 'Space Mono', monoespaço;
 }
 
-div.theme-light{
-    
-}
-
 header{
     max-width: 1000px;
     display: flex;
