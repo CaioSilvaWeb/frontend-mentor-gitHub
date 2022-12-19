@@ -327,6 +327,8 @@ div.contacts-info{
 
     section#search button {
         padding: 0.5rem;
+        position: absolute;
+        right: 20px;
     }
 
 }
