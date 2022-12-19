@@ -1,4 +1,3 @@
-const btnTheme = document.querySelector(".btn-theme");
 const searchBtn = document.querySelector(".search-btn");
 const inputSearch = document.querySelector(".input-search");
 const name = document.querySelector(".name");
@@ -17,6 +16,12 @@ const contact = document.querySelector("#contact-link");
 const contactTwitter = document.querySelector("#contact-twitter");
 const company = document.querySelector("#company");
 const img = document.querySelector(".img");
+const changeThemeBtn = document.querySelector('#change-theme')
+const label = document.querySelector('#label')
+
+changeThemeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light')
+});
 
 document.addEventListener('keypress', function(e){
   if(e.key === 'Enter'){
@@ -38,7 +43,7 @@ searchBtn.addEventListener('click', function () {
     username.innerHTML = `@${data.login}`;
     textProfile.innerHTML = data.bio; // ajustar max-whidth
 
-    date.innerHTML = `Usuario desde: ${dateBr}`;
+    date.innerHTML = `User since: ${dateBr}`;
 
     repos.innerHTML = data.public_repos;
     followers.innerHTML = data.followers;
@@ -49,11 +54,11 @@ searchBtn.addEventListener('click', function () {
     twitter.innerHTML = data.twitter_username;
     job.innerHTML = data.company;
 
-    if(data.company == null){
+    if(data.company == null || data.company == ""){
       job.innerHTML = 'Não atribuído';
       company.style.color = '#434242';
     }
-    if(data.location == null){
+    if(data.location == null || data.location == ""){
       local.innerHTML = 'Não atribuído';
       locationUser.style.color = '#434242';
     }
@@ -61,7 +66,7 @@ searchBtn.addEventListener('click', function () {
       link.innerHTML = 'Não atribuído';
       contact.style.color = '#434242';
     }
-    if(data.twitter_username == null){
+    if(data.twitter_username == null || data.twitter == ""){
       twitter.innerHTML = 'Não atribuído';
       contactTwitter.style.color = '#434242';
     }

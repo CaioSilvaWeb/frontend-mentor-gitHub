@@ -90,6 +90,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    align-items: center;
 }
 
 header span{
@@ -134,7 +135,7 @@ div.container{
    padding: 0 40px 0 30px;
 }
 
-section.center, header{
+section.center{
     text-align: center;
 }
 
@@ -160,8 +161,8 @@ section#search i{
 section#search button{
     background-color: #0079ff;
     color: #fff;
-    padding: 20px 50px;
-    border-radius: 12px;
+    padding: 15px 30px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
@@ -287,9 +288,13 @@ div.contacts-info{
     }
 
 
-
     section#search input::placeholder {
-        color: transparent;
+        font-size: 15px;
+    }
+
+    section#search button {
+      font-size: 15px;
+      padding: 0.8rem;
     }
 
     div.img-username {
