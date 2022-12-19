@@ -20,7 +20,7 @@ body {
     color: #4b6a9b;
 }
 
-.light span {
+.light a {
     color: #4b6a9b;
 }
 
@@ -93,10 +93,11 @@ header{
     align-items: center;
 }
 
-header span{
+header a{
     font-size: 30px;
     color: #fff;
     font-weight: 700;
+    text-decoration: none;
 }
 
 label  {
@@ -289,12 +290,12 @@ div.contacts-info{
 
 
     section#search input::placeholder {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     section#search button {
-      font-size: 15px;
-      padding: 0.8rem;
+      font-size: 14px;
+      padding: 0.7rem;
     }
 
     div.img-username {
