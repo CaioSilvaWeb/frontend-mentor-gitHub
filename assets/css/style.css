@@ -267,13 +267,13 @@ div.contacts p {
 }
 
 div.contacts i {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 div.contacts-info {
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
+  margin: 10px;
 }
 
 @media (max-width: 700px) {
